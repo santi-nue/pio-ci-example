@@ -3,8 +3,9 @@ name: Build
 # Because a PR results in a push; this workflow will run when a PR is merged
 # or when a commit is pushed directly to any branch.
 on:
-  push:
-    branches:
+ workflow_dispatch:
+ push:
+      branches:
       - '*'
 
 jobs:
